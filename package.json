@@ -2,10 +2,30 @@
   "name": "google-local-pubsub-cli",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "glpubsub": "dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creato-c/google-local-pubsub-cli.git"
+  },
+  "keywords": [
+    "google",
+    "google cloud",
+    "pubsub",
+    "cli",
+    "emulator"
+  ],
   "author": "ideodora <ideodora@gmail.com> (https://blog.ideodora.info/)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/pubsub": "^2.18.1",
+    "mri": "^1.2.0",
+    "typescript": "^4.4.4"
+  }
 }
