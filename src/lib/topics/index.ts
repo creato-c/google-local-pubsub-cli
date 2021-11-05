@@ -1,7 +1,6 @@
 import path from 'path';
 import { Argv } from 'mri';
 import { createPubSub } from '../pubsub';
-import { load } from '@grpc/grpc-js';
 import { TopicMetadata } from '@google-cloud/pubsub';
 
 const ALREADY_EXISTS = 6;
