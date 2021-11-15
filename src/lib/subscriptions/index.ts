@@ -99,5 +99,10 @@ create topic from configure file(json)
     process.exit(0);
   }
 
+  const subscriptions = await client.getSubscriptions();
+
+  console.log('list subscriptions: ##############');
+  console.dir(subscriptions);
+
   process.exit(0);
 }

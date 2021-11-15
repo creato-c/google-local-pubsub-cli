@@ -56,5 +56,10 @@ create topic from configure file(json)
     process.exit(0);
   }
 
+  const topics = await client.getTopics();
+
+  console.log('list topics: ##############');
+  console.dir(topics);
+
   process.exit(0);
 }
