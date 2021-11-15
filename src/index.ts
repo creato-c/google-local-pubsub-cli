@@ -16,8 +16,9 @@ async function main(argv: Argv) {
         process.exit(0);
       });
     case 'subscriptions':
-      subscriptions(argv);
-      process.exit(0);
+      return subscriptions(argv).then((_) => {
+        process.exit(0);
+      });
     default:
       break;
   }
