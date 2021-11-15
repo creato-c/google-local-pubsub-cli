@@ -3,7 +3,7 @@
 import mri, { Argv } from 'mri';
 const pkg = require('../package.json');
 import { topics } from './lib/topics';
-import { subscriptions } from './lib/subscriptions/subscriptions';
+import { subscriptions } from './lib/subscriptions';
 
 const argv = mri(process.argv.slice(2), {
   boolean: ['help', 'h', 'version', 'v'],

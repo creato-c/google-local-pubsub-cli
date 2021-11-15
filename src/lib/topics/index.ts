@@ -19,7 +19,6 @@ Usage:
   }
 
   const client = createPubSub(argv.project ?? argv.p);
-  console.log(client);
 
   if (argv.config || argv.c) {
     process.stdout.write(`

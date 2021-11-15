@@ -1,0 +1,16 @@
+[
+  {
+    "topic": "Hoge",
+    "name": "HogeSubscription",
+    "pushConfig": {
+      "pushEndpoint": "http://hogehoge"
+    }
+  },
+  {
+    "topic": "Huga",
+    "name": "HugaSubscription",
+    "pushConfig": {
+      "pushEndpoint": "http://hogehoge"
+    }
+  }
+]
